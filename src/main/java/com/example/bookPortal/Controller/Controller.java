@@ -9,11 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class Controller {
 
-    //booksRepo autowire karna hai
 
     @GetMapping("/books")
-    public ResponseEntity<?> fetchBooks() {
-        return ResponseEntity.ok().build();
+    public ResponseEntity<String> fetchBooks() {
+        return ResponseEntity.ok("Books");
     }
     // Test Cases:-
     // 1.) Books Exist = 200 OK + List Of Books
@@ -25,4 +24,10 @@ public class Controller {
     public String save() {
         return "Request saved";
     }
+
+    @GetMapping("/message")
+    public ResponseEntity<String> sayHello() {
+        return ResponseEntity.ok("Hello");
+    }
+    
 }
