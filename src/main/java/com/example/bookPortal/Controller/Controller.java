@@ -19,5 +19,9 @@ public class Controller {
     public ResponseEntity<String> sayHello() {
         return ResponseEntity.ok("Hello");
     }
+    @GetMapping("/author")
+     public ResponseEntity<String> fetchauthor() {
+        return ResponseEntity.ok("Author");
+    }
     
 }
