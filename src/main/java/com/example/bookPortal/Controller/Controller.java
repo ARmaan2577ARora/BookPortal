@@ -29,6 +29,12 @@ public class Controller {
     public ResponseEntity<String> sayHello() {
         return ResponseEntity.ok("Hello");
     }
+
+    @GetMapping("/akshant")
+    public ResponseEntity<String> akshantApi() {
+        return ResponseEntity.ok("Akshant API Added");
+    }
+
     @GetMapping("/author")
      public ResponseEntity<String> fetchauthor() {
         return ResponseEntity.ok("Author");
