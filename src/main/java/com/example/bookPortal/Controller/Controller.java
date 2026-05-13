@@ -36,8 +36,10 @@ public class Controller {
     }
 
     @GetMapping("/author")
-     public ResponseEntity<String> fetchauthor() {
-        return ResponseEntity.ok("Author");
+     public ResponseEntity<String> fetchauthor() { return ResponseEntity.ok("Author");
     }
+
+    @GetMapping("/msg")
+    public String Save(){ return "message saved"; }
     
 }
